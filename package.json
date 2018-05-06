@@ -5,5 +5,11 @@
   "main": "index.js",
   "author": "Charlie Jackson <contact@charliejackson.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "start": "src/index.js"
+  },
+  "bin": {
+    "project": "src/index.js"
+  }
 }
