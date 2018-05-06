@@ -2,17 +2,26 @@
   "name": "project-templates",
   "version": "0.1.0",
   "description": "Project templates for Charlie Jackson",
-  "main": "index.js",
   "author": "Charlie Jackson <contact@charliejackson.com>",
   "license": "MIT",
   "private": false,
+  "main": "dist/main.cjs.js",
+  "module": "dist/main.esm.js",
   "scripts": {
-    "start": "src/index.js"
+    "start": "node dist/main.cjs.js",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
   },
   "bin": {
-    "project": "src/index.js"
+    "project": "node dist/main.cjs.js"
   },
+  "files": ["dist"],
   "dependencies": {
     "commander": "^2.15.1"
+  },
+  "devDependencies": {
+    "rollup": "^0.58.2"
   }
 }
