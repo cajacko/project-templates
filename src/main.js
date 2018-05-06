@@ -1,7 +1,8 @@
-import program from "commander";
+const program = require("commander");
+const pkg = require("../package.json");
 
 program
-  .version("0.1.0", "-V, -v, --version")
+  .version(pkg.version)
   .option("-p, --peppers", "Add peppers")
   .option("-P, --pineapple", "Add pineapple")
   .option("-b, --bbq-sauce", "Add bbq sauce")

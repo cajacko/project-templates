@@ -17,13 +17,13 @@
   "bin": {
     "project": "dist/main.cjs.js"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "dependencies": {
     "commander": "^2.15.1"
   },
   "devDependencies": {
-    "rollup": "^0.58.2"
+    "rollup": "^0.58.2",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.3.0"
   }
 }
