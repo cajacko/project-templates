@@ -1,7 +1,7 @@
 import program from "commander";
 
 program
-  .version("0.1.0")
+  .version("0.1.0", "-V, -v, --version")
   .option("-p, --peppers", "Add peppers")
   .option("-P, --pineapple", "Add pineapple")
   .option("-b, --bbq-sauce", "Add bbq sauce")
