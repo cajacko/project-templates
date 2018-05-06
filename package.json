@@ -11,5 +11,8 @@
   },
   "bin": {
     "project": "src/index.js"
+  },
+  "dependencies": {
+    "commander": "^2.15.1"
   }
 }
