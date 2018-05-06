@@ -1,0 +1,9 @@
+{
+  "name": "project-templates",
+  "version": "0.1.0",
+  "description": "Project templates for Charlie Jackson",
+  "main": "index.js",
+  "author": "Charlie Jackson <contact@charliejackson.com>",
+  "license": "MIT",
+  "private": false
+}
