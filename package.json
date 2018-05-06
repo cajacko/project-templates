@@ -5,25 +5,17 @@
   "author": "Charlie Jackson <contact@charliejackson.com>",
   "license": "MIT",
   "private": false,
-  "main": "dist/main.cjs.js",
-  "module": "dist/main.esm.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node dist/main.cjs.js",
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "test": "node test/test.js",
-    "pretest": "yarn run build"
+    "start": "node src/index.js"
   },
   "bin": {
-    "project": "dist/main.cjs.js"
+    "project": "src/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "src"
+  ],
   "dependencies": {
     "commander": "^2.15.1"
-  },
-  "devDependencies": {
-    "rollup": "^0.58.2",
-    "rollup-plugin-json": "^2.3.0",
-    "rollup-plugin-node-resolve": "^3.3.0"
   }
 }
