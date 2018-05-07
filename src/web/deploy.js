@@ -1,8 +1,29 @@
+const path = require("path");
+const fs = require("fs-extra");
 const build = require("./build");
-const runNpmScript = require("../utils/runNpmScript");
+const runCommand = require("../utils/runCommand");
+const getProjectDir = require("../utils/getProjectDir");
 
 module.exports = () => {
-  build().then(() => {
-    return runNpmScript("deploy");
-  });
+  return build()
+    .then(() => {
+      const firebaserc = {
+        projects: {
+          default: process.env.FIREBASE_PROJECT_ID
+        }
+      };
+
+      return fs.writeJSON(
+        path.join(__dirname, "../../.firebaserc"),
+        firebaserc,
+        { spaces: 2 }
+      );
+    })
+    .then(() => {
+      return runCommand(
+        path.join(__dirname, "../../"),
+        "node_modules/.bin/firebase",
+        ["deploy", "--token", process.env.FIREBASE_CI_TOKEN]
+      );
+    });
 };
