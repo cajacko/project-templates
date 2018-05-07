@@ -1,16 +1,13 @@
 const program = require("commander");
 
 const commands = {
-  start: require("./start"),
-  init: require("./init")
+  start: require("./start")
 };
 
 program
   .command("web <cmd>")
-  .description("Execute a command with the native template")
+  .description("Execute a command with the web template")
   .action(function(cmd, options) {
-    console.log("web");
-
     if (commands[cmd]) {
       return commands[cmd](cmd, options);
     }
