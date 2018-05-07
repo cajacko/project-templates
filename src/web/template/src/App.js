@@ -1,5 +1,14 @@
+import React from "react";
 import config from "project-templates/project.config";
+import { Provider } from "react-redux";
+import store from "./store";
 
-const ProjectRoot = config.entryComponent;
+const EntryComponent = config.entryComponent;
 
-export default ProjectRoot;
+const Root = () => (
+  <Provider store={store}>
+    <EntryComponent />
+  </Provider>
+);
+
+export default Root;
