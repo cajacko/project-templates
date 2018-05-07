@@ -1,5 +1,5 @@
 const runWebCommand = require("../utils/runWebCommand");
 
 module.exports = () => {
-  runWebCommand("start");
+  return runWebCommand("build");
 };
