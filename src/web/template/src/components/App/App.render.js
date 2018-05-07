@@ -1,13 +1,12 @@
 import React from "react";
 import config from "project-templates/project.config";
 import { Provider } from "react-redux";
-import store from "./store";
-
-const EntryComponent = config.entryComponent;
+import store from "../../store";
+import Router from "../Router";
 
 const Root = () => (
   <Provider store={store}>
-    <EntryComponent />
+    <Router routes={config.routes} />
   </Provider>
 );
 
