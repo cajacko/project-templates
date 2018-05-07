@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import ProjectRoot from "../../../../../../src";
+import config from "project-templates/project.config";
+
+const ProjectRoot = config.entryComponent;
 
 class App extends Component {
   render() {
