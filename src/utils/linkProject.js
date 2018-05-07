@@ -3,6 +3,6 @@ const link = require("../utils/link");
 
 module.exports = () => {
   return link(
-    path.join(__dirname, "./template/node_modules/project-templates")
+    path.join(__dirname, "../web/template/node_modules/project-templates")
   );
 };

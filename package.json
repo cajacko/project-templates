@@ -7,7 +7,9 @@
   "private": false,
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "login": "firebase logout && firebase login",
+    "deploy": "firebase deploy"
   },
   "bin": {
     "project": "src/index.js"
@@ -15,6 +17,7 @@
   "files": ["src"],
   "dependencies": {
     "commander": "^2.15.1",
+    "firebase-tools": "^3.18.4",
     "react-dev-utils": "^5.0.1",
     "symlink-dir": "^1.1.2"
   }
