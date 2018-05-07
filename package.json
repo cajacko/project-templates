@@ -16,6 +16,7 @@
     "src"
   ],
   "dependencies": {
-    "commander": "^2.15.1"
+    "commander": "^2.15.1",
+    "react-dev-utils": "^5.0.1"
   }
 }
