@@ -3,7 +3,8 @@ const linkProject = require("../utils/linkProject");
 
 const commands = {
   start: require("./start"),
-  deploy: require("./deploy")
+  deploy: require("./deploy"),
+  init: require("./init")
 };
 
 program
