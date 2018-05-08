@@ -1,6 +1,6 @@
 {
   "name": "cj-project-templates",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Project templates for Charlie Jackson",
   "author": "Charlie Jackson <contact@charliejackson.com>",
   "license": "MIT",
@@ -9,9 +9,7 @@
   "bin": {
     "project": "src/index.js"
   },
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "dependencies": {
     "commander": "^2.15.1",
     "dotenv": "^5.0.1",
