@@ -1,5 +1,5 @@
 import React from "react";
-import config from "project-templates/project.config";
+import config from "@cajacko/project-templates/project.config";
 import { Provider } from "react-redux";
 import store from "../../store";
 import Router from "../Router";
