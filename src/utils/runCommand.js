@@ -6,6 +6,12 @@ module.exports = (dir, cmd, opts) => {
     try {
       process.chdir(dir);
 
+      const options = Object.assign({}, opts || {});
+
+      if (!options.cwd) {
+        options.cwd = dir;
+      }
+
       const ls = spawn(cmd, opts, {
         stdio: "inherit"
       });
