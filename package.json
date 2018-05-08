@@ -1,5 +1,5 @@
 {
-  "name": "cj-project-templates",
+  "name": "@cajacko/project-templates",
   "version": "0.2.2",
   "description": "Project templates for Charlie Jackson",
   "author": "Charlie Jackson <contact@charliejackson.com>",
@@ -10,11 +10,10 @@
     "project": "src/index.js"
   },
   "scripts": {
+    "publish": "yarn publish --access=public",
     "postinstall": "cd src/web/template && yarn"
   },
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "dependencies": {
     "commander": "^2.15.1",
     "dotenv": "^5.0.1",
