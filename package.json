@@ -10,12 +10,10 @@
     "project": "src/index.js"
   },
   "scripts": {
-    "publish:temp": "yarn publish --access=public",
+    "deploy": "yarn publish --access=public",
     "postinstall": "cd src/web/template && yarn"
   },
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "dependencies": {
     "commander": "^2.15.1",
     "dotenv": "^5.0.1",
