@@ -1,6 +1,6 @@
 {
   "name": "@cajacko/project-templates",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Project templates for Charlie Jackson",
   "author": "Charlie Jackson <contact@charliejackson.com>",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "project": "src/index.js"
   },
   "scripts": {
-    "publish": "yarn publish --access=public",
+    "publish:temp": "yarn publish --access=public",
     "postinstall": "cd src/web/template && yarn"
   },
   "files": [
