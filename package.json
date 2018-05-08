@@ -9,9 +9,10 @@
   "bin": {
     "project": "src/index.js"
   },
-  "files": [
-    "src"
-  ],
+  "scripts": {
+    "postinstall": "cd src/web/template && yarn"
+  },
+  "files": ["src"],
   "dependencies": {
     "commander": "^2.15.1",
     "dotenv": "^5.0.1",
