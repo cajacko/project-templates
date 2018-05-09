@@ -20,6 +20,9 @@ module.exports = () => {
       );
     })
     .then(() => {
+      return runCommand(path.join(__dirname, "../../"), "ls", ["-a"]);
+    })
+    .then(() => {
       return runCommand(
         path.join(__dirname, "../../"),
         "node_modules/.bin/firebase",
