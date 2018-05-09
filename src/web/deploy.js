@@ -20,7 +20,10 @@ module.exports = () => {
       );
     })
     .then(() => {
-      return runCommand(path.join(__dirname, "../../"), "ls", ["-a"]);
+      return fs.copy(
+        path.join(__dirname, "../templates/firebase.json"),
+        path.join(__dirname, "../../firebase.json")
+      );
     })
     .then(() => {
       return runCommand(
