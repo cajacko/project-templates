@@ -12,7 +12,9 @@
   "scripts": {
     "test": "echo \"test\"",
     "prepareDeploy": "babel-node scripts/prepareDeploy.js",
-    "postinstall": "cd src/web/template && yarn"
+    "install:web": "cd src/web/template && yarn",
+    "install:native": "cd src/native/template && yarn",
+    "postinstall": "yarn install:web && yarn install:native"
   },
   "files": ["src"],
   "dependencies": {
