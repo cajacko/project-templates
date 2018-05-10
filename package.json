@@ -1,6 +1,6 @@
 {
   "name": "@cajacko/project-templates",
-  "version": "0.2.11-0",
+  "version": "0.2.11",
   "description": "Project templates for Charlie Jackson",
   "author": "Charlie Jackson <contact@charliejackson.com>",
   "license": "MIT",
@@ -14,9 +14,7 @@
     "deploy": "babel-node scripts/deploy.js",
     "postinstall": "cd src/web/template && yarn"
   },
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "dependencies": {
     "commander": "^2.15.1",
     "dotenv": "^5.0.1",
