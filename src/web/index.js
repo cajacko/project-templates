@@ -12,7 +12,7 @@ program
   .description("Execute a command with the web template")
   .action(function(cmd, options) {
     if (commands[cmd]) {
-      return linkProject()
+      return linkProject("web")
         .then(() => commands[cmd](cmd, options))
         .catch(e => {
           console.error(e);
