@@ -2,7 +2,6 @@ const latestVersion = require("latest-version");
 const semver = require("semver");
 const path = require("path");
 const fs = require("fs-extra");
-const runCommand = require("../src/utils/runCommand");
 const pkg = require("../package.json");
 
 const pkgVersion = pkg.version;
