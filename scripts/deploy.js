@@ -12,6 +12,8 @@ latestVersion("@cajacko/project-templates").then(latestVersion => {
     ? pkgVersion
     : semver.inc(latestVersion, "patch");
 
+  console.log(`${versionToUse} - versionToUse`);
+
   //   return runCommand(path.join(__dirname, "../"), "yarn", [
   //     "publish",
   //     "--access=public",
