@@ -4,3 +4,4 @@ dist
 .firebaserc
 /firebase.json
 .DS_Store
+project.config.js
