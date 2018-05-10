@@ -9,5 +9,4 @@ script:
 - yarn test
 - yarn prepareDeploy
 - git add -A && git commit -m "Updated version"
-- echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm adduser
 - npm publish
