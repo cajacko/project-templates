@@ -10,8 +10,8 @@
     "project": "src/index.js"
   },
   "scripts": {
-    "temp": "yarn publish --access=public",
-    "deploy": "babel-node scripts/deploy.js",
+    "test": "echo \"test\"",
+    "prepareDeploy": "babel-node scripts/prepareDeploy.js",
     "postinstall": "cd src/web/template && yarn"
   },
   "files": ["src"],

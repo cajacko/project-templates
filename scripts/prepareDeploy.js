@@ -12,15 +12,6 @@ latestVersion("@cajacko/project-templates").then(latestVersion => {
     ? pkgVersion
     : semver.inc(latestVersion, "patch");
 
-  console.log(`${versionToUse} - versionToUse`);
-
-  //   return runCommand(path.join(__dirname, "../"), "yarn", [
-  //     "publish",
-  //     "--access=public",
-  //     "--new-version",
-  //     versionToUse
-  //   ]);
-
   const contents = Object.assign({}, pkg, { version: versionToUse });
 
   return fs.writeJson(path.join(__dirname, "../package.json"), contents, {
