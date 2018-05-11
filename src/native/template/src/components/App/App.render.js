@@ -1,20 +1,15 @@
 // @flow
 
 import React from 'react';
-import { Text, View } from 'react-native';
-import styles from './App.styles';
+import { Provider } from 'react-redux';
+import config from '../../project.config';
+import store from '../../store';
+import Router from '../Router';
 
-/**
- * Example app
- *
- * @return {ReactElement} The markup to render
- */
-const App = () => (
-  <View testID="app" style={styles.container}>
-    <Text>Open up App.js to start working on your app!</Text>
-    <Text>Changes you make will automatically reload.</Text>
-    <Text>Shake your phone to open the developer menu.</Text>
-  </View>
+const Root = () => (
+  <Provider store={store}>
+    <Router routes={config.routes} />
+  </Provider>
 );
 
-export default App;
+export default Root;

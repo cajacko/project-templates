@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import { persistStore, autoRehydrate } from "redux-persist";
-import config from "@cajacko/project-templates/project.config";
+import config from "../project.config";
 import logger from "redux-logger";
 
 const reducers = combineReducers(config.reducers);

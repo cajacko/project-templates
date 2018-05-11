@@ -120,7 +120,7 @@ module.exports = {
         ],
         include: [
           paths.appSrc,
-          path.join(__dirname, "../node_modules/@cajacko/project-templates")
+          path.join(__dirname, "../node_modules/@cajacko/project")
         ]
       },
       {
@@ -144,7 +144,7 @@ module.exports = {
             test: /\.(js|jsx|mjs)$/,
             include: [
               paths.appSrc,
-              path.join(__dirname, "../node_modules/@cajacko/project-templates")
+              path.join(__dirname, "../node_modules/@cajacko/project")
             ],
             loader: require.resolve("babel-loader"),
             options: {

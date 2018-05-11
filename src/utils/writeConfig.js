@@ -3,18 +3,19 @@ const fs = require("fs-extra");
 const getProjectDir = require("../utils/getProjectDir");
 
 module.exports = project => () => {
-  const configPath = path.join(getProjectDir(), "project.json");
+  const projectDir = getProjectDir();
+  const configPath = path.join(projectDir, "project.json");
 
   return fs.readJson(configPath).then(config => {
     const { reducers, routes } = config[project];
 
     const file = `
-import reducers from "@cajacko/project-templates/${reducers}";
-import routes from "@cajacko/project-templates/${routes}";
+import reducers from '${projectDir}/${reducers}.js';
+import routes from '${projectDir}/${routes}.js';
 
 export default {
-    reducers,
-    routes
+  reducers,
+  routes
 };
     `;
 

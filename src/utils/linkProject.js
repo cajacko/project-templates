@@ -5,7 +5,7 @@ module.exports = project => {
   return link(
     path.join(
       __dirname,
-      `../${project}/template/node_modules/@cajacko/project-templates`
+      `../${project}/template/node_modules/@cajacko/project`
     )
   );
 };
