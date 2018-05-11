@@ -15,7 +15,7 @@ program
   .action(function(cmd, options) {
     if (commands[cmd]) {
       return linkProject("native")
-        .then(writeConfig("native"))
+        .then(writeConfig("native", true))
         .then(() => commands[cmd](cmd, options, program))
         .catch(e => {
           console.error(e);
