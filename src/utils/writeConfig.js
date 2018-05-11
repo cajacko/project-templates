@@ -10,8 +10,8 @@ module.exports = project => () => {
     const { reducers, routes } = config[project];
 
     const file = `
-import reducers from '${projectDir}/${reducers}.js';
-import routes from '${projectDir}/${routes}.js';
+import reducers from '${projectDir}/${reducers}';
+import routes from '${projectDir}/${routes}';
 
 export default {
   reducers,
