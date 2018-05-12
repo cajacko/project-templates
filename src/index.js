@@ -6,6 +6,7 @@ require("./utils/loadProjectEnv");
 require("./native");
 require("./web");
 require("./firebase");
+require("./init");
 
 program.version(pkg.version, "-v, --version");
 

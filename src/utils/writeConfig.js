@@ -1,14 +1,12 @@
 const path = require("path");
 const fs = require("fs-extra");
 const getProjectDir = require("../utils/getProjectDir");
+const getProjectConfig = require("./getProjectConfig");
 
 module.exports = (project, useAbsolute) => () => {
-  const projectDir = getProjectDir();
-  const configPath = path.join(projectDir, "project.json");
+  const importRoot = useAbsolute ? getProjectDir() : "@cajacko/project";
 
-  const importRoot = useAbsolute ? projectDir : "@cajacko/project";
-
-  return fs.readJson(configPath).then(config => {
+  return getProjectConfig().then(config => {
     const { reducers, routes } = config[project];
 
     const file = `

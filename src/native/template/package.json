@@ -101,5 +101,8 @@
     "looks-same": "^3.3.0",
     "prettier-eslint-cli": "^4.7.1",
     "react-test-renderer": "^16.3.1"
+  },
+  "peerDependencies": {
+    "react": "16.3.0-alpha.1"
   }
 }
